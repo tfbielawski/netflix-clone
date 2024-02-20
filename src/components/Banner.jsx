@@ -1,8 +1,28 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import NETB2 from "../assets/netb2.jpeg"
+import axios from "../helpers/Axios";
+import requests from "../helpers/Requests";
 import "../styles/Banner.css";
 
 function Banner() {
+    const [movie, setMovie] = useState([]);
+
+    useEffect(() => {
+        async function fetchData(){
+            const request = await axios
+            .get(requests.fetchNetflixOriginals);
+            setMovie(
+                request.data.results[
+                    Math.floor(Math.random() * request.data.results.length - 1)
+                ]
+            );
+            return request;
+        }
+        fetchData();
+    },[]) // empty dep array, ensures only one call
+
+    console.log(movie)
+
     //Shorten the descriptin text, string and num of chars
     function truncate(string, n){
         return string?.length > n ? string.substr(0, n - 1) + "..." : string;
