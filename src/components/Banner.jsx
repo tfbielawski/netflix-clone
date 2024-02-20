@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import NETB2 from "../assets/netb2.jpeg"
 import axios from "../helpers/Axios";
-import requests from "../helpers/Requests";
+import requests, { IMAGE_BASE } from "../helpers/Requests";
 import "../styles/Banner.css";
 
 function Banner() {
@@ -33,7 +33,7 @@ function Banner() {
             className="banner" 
             style={{
                 backgroundSize: "cover",
-                backgroundImage: `url(${NETB2})`,
+                backgroundImage: `url(${IMAGE_BASE}${movie?.backdrop_path})`,
                 backgroundPosition: "center center",
             }}
         >
