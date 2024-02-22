@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from "react";
-import NETB2 from "../assets/netb2.jpeg"
 import axios from "../helpers/Axios";
 import requests, { IMAGE_BASE } from "../helpers/Requests";
 import "../styles/Banner.css";
@@ -52,7 +51,7 @@ function Banner() {
                 </h1>
             </div>
             {/* empty div to style bottom fade/blur */}
-            <div className="banner--fadeBottom" />
+            {/* <div className="banner--fadeBottom" /> */}
         </header>
     )
 }
