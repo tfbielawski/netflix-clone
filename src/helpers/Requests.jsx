@@ -1,5 +1,5 @@
 
-export const IMAGE_BASE = "https://image.tmdb.org/t/p/original/";
+export const IMAGE_BASE = "https://image.tmdb.org/t/p/original";
 /* Best Practice is to hide the key in a .env file, but for demo purposes I'm leaving it here */
 const API_KEY ="f5622499313c2dad7c702c804a4c478d";
 const requests = {
