@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import "../styles/LoginScreen.css";
 import NET3 from "../assets/net3.png";
+import SigupScreen from "./SigupScreen";
 
 function LoginScreen() {
     const [signIn, setSignIn] =  useState(false);
@@ -21,8 +22,8 @@ function LoginScreen() {
                 <div className="loginScreen_gradient" />
             </div>
             <div className="loginScreen_body">
-                {SignUpScreen ? (
-                    <SignIn />
+                {signIn ? (
+                    <SigupScreen />
                 ) : (
                     <>
                     <h1>Unlimited Films, TV programs, and more.</h1>
