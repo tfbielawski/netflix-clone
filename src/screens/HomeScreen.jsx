@@ -9,9 +9,7 @@ function HomeScreen() {
   return (
     <div className="homeScreen">
         <Nav />
-        
         <Banner/>
-
         <Row 
           title="Netflix Originals"
           fetchUrl={requests.fetchNetflixOriginals}
