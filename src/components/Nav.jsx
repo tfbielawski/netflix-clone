@@ -1,10 +1,13 @@
 import React, {useState, useEffect} from "react";
+// import {useHistory} from "react-router-dom"; // Replaced by useNavigate
+import { useNavigate, useNavigation } from "react-router-dom";
 import NET3 from "../assets/net3.png";
 import WIT5 from "../assets/wit5.png";
 import "../styles/Nav.css";
 
 function Nav() {
     const [show, setShow] = useState(false);
+    const navigate = useNavigate();
 
     const transitionNavBar = () => {
         //Scroll over 100 items on screen, show nav bar
@@ -32,12 +35,15 @@ function Nav() {
                 <img 
                     className="nav_logo"
                     src={NET3} 
-                    alt="Netflix"
+                    alt="Netflix" 
+                    onClick={()=>navigate("/")}                   
                 />
                 <img 
                     className="nav_avatar"
                     src={WIT5}
                     alt="Netflix"
+                    // onClick={()=>navigate.push("/profile")}
+                    onClick={()=>navigate("/profile")}
                 />
             </div>
         </div>
@@ -45,3 +51,6 @@ function Nav() {
 }
 
 export default Nav
+
+//useHistory replaced by useNavigate
+//https://stackoverflow.com/questions/62861269/attempted-import-error-usehistory-is-not-exported-from-react-router-dom
