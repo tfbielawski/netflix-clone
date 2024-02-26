@@ -33,13 +33,15 @@ function LoginScreen() {
 
                     <div className="loginScreen_input">
                         <form>
-                            <input type="email" placeholder="email address" />
+                            <input type="email" placeholder="email address" />                            
                             <button 
                                 className="loginScreen_getStarted"
                                 onClick={() => setSignIn(true)}
                             >
                                 GET STARTED
                             </button>
+                            <h4>Welcome to my Netflix Clone App. 
+                                <br></br>Please click "Get Started," enter an email and password, then click "Sign up now!" to test the app.</h4>
                         </form>
                     </div>   
                 </>

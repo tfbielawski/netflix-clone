@@ -16,7 +16,7 @@ function ProfileScreen() {
             <div className="profileScreen">
                 <Nav />
                 <div className="profileScreen_body">
-                    <h1>EDIT PROFILE</h1>
+                    <h1>Edit Profile</h1>
                     <div className="profileScreen_info">
                         <img 
                             src={WIT5} 

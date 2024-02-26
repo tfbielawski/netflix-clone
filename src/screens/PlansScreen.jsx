@@ -7,8 +7,10 @@ function PlansScreen() {
     return (
         <div className="plansScreen_plan">
             <div className="plansScreen_info">
-                <h5></h5>
-                <h6></h6>
+                <h3>Select your plan (in development) </h3>
+                <h5>Netflix Standard 720p </h5>
+                <h5>Netflix Basic 1080p  </h5>
+                <h5>Netflix Premium 4k HDR </h5>
             </div>
             <button>SUBSCRIBE</button>
         </div>

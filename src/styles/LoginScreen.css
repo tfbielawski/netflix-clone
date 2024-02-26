@@ -58,6 +58,12 @@
     font-size: 1.3rem;
     font-weight: 400;
 }
+.loginScreen_input > form > h4 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    /* color: rgb(219, 66, 5); */
+    /* color: #e50914 */
+}
 
 .loginScreen_gradient {
     width: 100%;
