@@ -12,7 +12,7 @@ function PlansScreen() {
                 <h5>Netflix Basic 1080p  </h5>
                 <h5>Netflix Premium 4k HDR </h5>
             </div>
-            <button>SUBSCRIBE</button>
+            <button>SUBSCRIBE</button>            
         </div>
     )
 }

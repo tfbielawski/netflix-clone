@@ -34,6 +34,7 @@ function ProfileScreen() {
                                     SIGN OUT
                                 </button>
                             </div>
+                            <h4>Click on the Netflix Logo to return to the movie and tv selection or click "sign out" to leave the app.</h4>
                         </div>
                     </div>
                 </div>
